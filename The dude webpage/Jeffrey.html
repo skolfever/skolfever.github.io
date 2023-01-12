@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+      background: hsl(189, 72%, 58%);
+      padding: 2px;
+      font-family: 'Times New Roman', Times, serif;
+      color: red;
+    }
+    .mainTitle {
+      color: black;
+      background: #e27d60;
+      padding: 8px;
+      border-radius: 10px;
+      text-align: center;
+      margin: 5px;
+      font-size: xx-large;
+      display:flex;
+      flex-direction: column;
+      
+    }
+    .images {
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .tab {
+      overflow: hidden;
+      border: none;
+      background-color: #e27d60;
+      display:flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: #e27d60;
+      
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: rgb(204, 204, 204);
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+    }
+    .title {
+      color: white;
+      border-bottom: 2px solid white;
+      text-align: center;
+    }
+    .bio {
+      display:flex;
+      background: none;
+      justify-content:space-between;
+      color: white;
+      align-self: center;
+      border: 1px solid ;
+      border-radius: 25px;
+      margin-left: 3px;
+      padding: 15px;
+    }
+    .link {
+      background-color: gold;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      margin-top: -100px;
+      margin-left: 50px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    .ingredients {
+      background: none;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border:none;
+      border-radius: 5px;
+      margin:10px;
+      padding:5px;
+      color: white;
+    }
+    .newImages {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        padding-top: 10px;
+        width: 600px;
+        height: 350px;
+    }
+    #homebutton {
+        margin: auto;
+        text-align: center;
+        width: 150px; 
+        height: 15px;
+        padding: 10px;
+        background-color: #e27d60;
+        border-radius: 5px;
+        font-style: normal;
+        color: black;
+    }
+    .bodytext {
+        color: rgb(227, 225, 225);
+        font-size: large;
+        line-height: 25px;
+        width: 615px;
+        margin-left: 100px;
+        background-color: #541604;
+        border-radius: 5px;
+        padding: 1px;
+        display: flex;
+    }
+
+    
+      </style>
+    <style>
+        body {
+          background-image: url(https://images4.alphacoders.com/238/238264.jpg);
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          back
+        }
+      </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="mainTitle">
+        <strong>Jeffrey Lebowski</strong>
+        "The Big Lebowski"
+    </div>
+    
+    <div id="homebutton">
+        <a href="The Dude.html">Home Page</a>
+    </div>
+    
+
+
+
+<!-- script for return to character tab -->
+    <script>
+        function clickHandle(evt, animalName) {
+          let i, tabcontent, tablinks;
+        
+          // This is to clear the previous clicked content.
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+        
+          // Set the tab to be "active".
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+        
+          // Display the clicked tab and set it to active.
+          document.getElementById(animalName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+    
+
+
+
+
+</head>
+<body>
+    <img class="newImages" src="https://static01.nyt.com/images/2016/08/06/arts/05HuddlestonObit1/05HuddlestonObit1-videoSixteenByNineJumbo1600.jpg">
+</body>
+<br>
+<div class="bodytext">
+<p>
+    Jeffrey "The Big" Lebowski (played by David Huddleston) and the titular main antagonist of 'The Big Lebowski'. He is a wheelchair-bound, multi-millionaire. He is married to Fawn Knutsen, b.k.a Bunny Lebowski, who is a much younger woman. At one point in his life he was married to a woman closer to his age and that marriage produced a daughter named Maude Lebowski. The first Mrs. Lebowski died prior to the film's events.
+
+    He is aided by a man named Brandt. It was through Brandt that The Dude contacted the Big Lebowski concerning the micturition of his rug through goons who had erroneously intimidated him, when in fact they were supposed to collect from the Big Lebowski, who was in debt to them due to Bunny's shopaholic habits.
+    
+    Although it's never proven within the confines of the film, Jeffrey Lebowski placed two yellow pages phone books in the briefcase in lieu of the cash which he had allegedly been embezzling via this kidnapping.
+    
+    Jeffrey Lebowski met with once first lady Nancy Reagan, unfortunately Ronald Reagan was not available for the photo opportunity. Nancy, according to The Dude is "pretty good".
+    
+    Jeffrey Lebowski's legs were taken from him by a Chinaman in Korea so he appears throughout the movie in a wheelchair, despite this he went out and achieved anyway. Convinced that The Big Lebowski is a "phony", Walter lifts him from his chair and releases him expecting to prove his masquerade. The Big Lebowski falls to the floor and begins to weep, to which the others remark Walter did not think that through.
+    
+    According to Maude Lebowski, the Big Lebowski's greatest flaw is vanity, through his marriage to Bunny and his refusal to admit his financial woes. Maude explains to the Dude that her father did not make much money through his own efforts, having married into an old money family for his first marriage. Maude's mother, who was a philanthropist, specified in her will that her money was to go into a trust fund to provide school tuitions for disadvantaged children, which was known as the "Little Lebowski Urban Achievers" charity. The Big Lebowski, largely through Brad, was embezzling money from the charity to cover his debts, and emptied the trust fund to pay for the supposed kidnapping of Bunny. Once both were out of the way, he could keep the money and avoid scrutiny from the authorities.
+</p>
+</div>
+
+</div>
+</html>

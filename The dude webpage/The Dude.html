@@ -1,0 +1,251 @@
+<html lang="en">
+  <style>
+    body {
+  background: hsl(189, 72%, 58%, 0.3);
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+}
+.mainTitle {
+  color: black;
+  background: #e27d60;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+  font-size: xx-large;
+  display:flex;
+  flex-direction: column;
+}
+.images {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #e27d60;
+  display:flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #e27d60;
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(204, 204, 204);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+.title {
+  color: white;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+.bio {
+  display:flex;
+  background: none;
+  justify-content:space-between;
+  color: white;
+  align-self: center;
+  border: none;
+  line-height: 30px;
+  font-size: large;
+  margin-left: 3px;
+  padding: 15px;
+}
+.link {
+  background-color: gold;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.ingredients {
+  background: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border:none;
+  border-radius: 5px;
+  margin:10px;
+  padding:5px;
+  color: white;
+}
+.characters {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  line-height: 50px; 
+}
+.video {
+  margin:auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+
+  </style>
+<style>
+  body {
+    background-image: url(https://images4.alphacoders.com/238/238264.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+</style>
+
+<head>
+<div id="bigBoss" class="mainDiv">
+ <!-- Title -->
+  <div class="mainTitle">
+    <div>
+    <strong>THE BIG LEBOWSKI</strong>
+    </div>
+    <div>
+    "The Dude"
+    </div>
+  </div>
+  </div>
+  <!-- Image -->
+  <body>
+  <div id="imageRow" class="images">
+    <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/61708-gramercy-pictures-1b21e9a657918d77638b27d18a7f8ba1.jpg" style=width:450px;height:250px>
+  </div>
+  <br>
+  <br />
+  
+  <div class="tab">
+    <button class="tablinks" onclick="clickHandle(event, 'Cat')">Who is "The Dude"?</button>
+    <button class="tablinks" onclick="clickHandle(event, 'Bear')">The White Russian</button>
+    <button class="tablinks" onclick="clickHandle(event, 'Dog')">The Dude's Friends</button>
+  </div>
+
+  </body>
+
+
+<!-- ABOUT TAB -->
+  <div id="Cat" class="tabcontent">
+     
+    <div>
+     <h3 class="title">
+     Jeffrey "The Dude" Lebowski
+     </h3>
+     
+    <img src="https://focusmicrositesprod.s3.amazonaws.com/assets/uploads/1589835830_foc_tbl_unit-57384_01129.jpg" style=height:430px;width:250px;padding:8px align=left>
+    <p class="bio">
+    "A single, unemployed slacker living in Venice, California, who enjoys cannabis, White Russians, "the occasional acid flashback" and bowling in a league. The Dude, now in his late forties, has a countercultural past: he claims to be one of the members of the Seattle Seven, and to have worked on the original Port Huron Statement, not the "compromised second draft." He is still a pacifist, though he has become less politically active. When college comes up in the movie, Lebowski claims he spent most of his time in college "occupying various administration buildings, smoking a lot of Thai stick, breaking into the ROTC and bowling." A devoted Creedence Clearwater Revival fan, he actively hates the Eagles and refers to Metallica, for whom he says he was a roadie on their "Speed of Sound" tour, as a "bunch of assholes." He has no job and seems unconcerned with money. Although he is called Lebowski, he is not related to the other Lebowski family, or the "Big" Lebowski. In interviews, the Coen brothers admit this character was based on Jeff Dowd, who was himself a member of the Seattle Seven."
+    </p>
+  </div>
+  <div>    
+    <button class="link" onclick="document.location='https://hero.fandom.com/wiki/Jeffrey_Lebowski'">Learn More Here!</button>
+  </div>
+  </div>
+  
+<!--   WHITE RUSSIAN TAB-->
+  <div id="Bear" class="tabcontent">
+    <h3 class="title">"Hey, careful Man, there's a beverage here!"</h3>
+    <img src="https://media.tenor.com/pHau873LjxUAAAAC/big-lebowski-stirring.gif" style=height:175px;width:275px;padding:8px align=left>
+    <div class="ingredients">
+    
+      <b class="ingredientTitle">INGREDIENTS</b>
+      <ul>
+      <li>2 ounces Vodka</li>
+      <li>1 ounce Kahlua</li>
+      <li>1 ounce Heavy Cream</li>
+      <li>Ice</li>
+      </ul>
+    </div>
+    <br><br />
+    <div class="ingredients">
+    
+    <b>INSTRUCTIONS</b>
+    <ol>
+    <li>Add the vodka and Kahlua to a low ball glass. Fill it with ice.
+</li>
+<li>Top with the cream. Stir until cold (or stir just a bit to get the swirl effect).
+</li>
+    </ol>
+    
+    </div>
+  </div>
+  
+  
+<!-- CHARACTERS TAB -->
+  <div id="Dog" class="tabcontent">
+    <h3 class="title">Main Characters</h3>
+    <div class="characters">
+    <a href="Walter.html">Walter Sobchak</a>
+    <a href="Donny.html">Donny Kerabatsos</a>
+    <a href="Jesus.html">Jesus Quintana</a>
+    <a href="Jeffrey.html">Jeffrey Lebowski</a>
+    <a href="Stranger.html">The Stranger</a>
+    </div>
+</div>
+
+
+
+
+<script>
+function clickHandle(evt, animalName) {
+  let i, tabcontent, tablinks, dudeVideo;
+
+  // This is to clear the previous clicked content.
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Set the tab to be "active".
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Display the clicked tab and set it to active.
+  document.getElementById(animalName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+  
+  
+  
+  
+
+
+
+</div>
+</html>
